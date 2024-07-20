@@ -1,3 +1,7 @@
+@import "@new-ui/colors";
+@import "@new-ui/spacings";
+@import "@new-ui/typography";
+
 html,
 body {
   width: 100vw;
@@ -8,16 +12,4 @@ body {
 
 *:focus-visible {
   outline: none;
-}
-
-code {
-  @apply text-sm font-mono text-purple-700 font-medium;
-}
-
-pre.astro-code {
-  @apply px-4 py-3 rounded-lg text-xl !bg-zinc-50/60 leading-6 overflow-x-scroll;
-}
-
-svg.rough-annotation {
-  opacity: 70%;
 }

@@ -23,9 +23,9 @@ const { post } = Astro.props;
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <div class="flex flex-col gap-8 md:w-5/6 px-4 py-12 sm:px-8 mx-auto">
+  <div class="flex flex-col gap-8">
     <div class="flex flex-col gap-6 items-center justify-center max-w-screen-sm mx-auto">
-      <h1 id="header" class="text-5xl text-center font-title font-black">{post.data.title}</h1>
+      <h1 id="header" class="">{post.data.title}</h1>
       <div class="flex items-center justify-center gap-2">
         <DateTag date={post.data.date} />
         {post.data.tags?.map((tag) => <Tag tag={tag} />)}
@@ -38,7 +38,7 @@ const { post } = Astro.props;
       )
     }
   </div>
-  <div class="relative flex flex-col gap-2 max-w-screen-md mx-auto px-4 sm:px-6 text-base text-zinc-700">
+  <div class="relative flex flex-col">
     <PostContent post={post} />
   </div>
 </Layout>
