@@ -10,7 +10,7 @@ type Props = {
 const { post } = Astro.props;
 ---
 
-<div class="flex flex-col gap-4">
+<div class="">
   {
     post.slug && (
       <a href={`/posts/${post.slug}`} target="_self">
@@ -22,16 +22,16 @@ const { post } = Astro.props;
       </a>
     )
   }
-  <div class="flex flex-col gap-2">
-    <div class="flex gap-2">
+  <div class="">
+    <div class="">
       <DateTag date={post.data.date} />
       {post.data.tags?.map((tag) => <Tag tag={tag} />)}
     </div>
     <a href={`/posts/${post.slug}`} target="_self">
-      <h1 class="text-3xl font-title font-black">{post.data.title}</h1>
+      <h1 class="">{post.data.title}</h1>
     </a>
     <a href={`/posts/${post.slug}`} target="_self">
-      <p class="text-sm text-zinc-700">{post.data.description}</p>
+      <p class="">{post.data.description}</p>
     </a>
   </div>
 </div>
