@@ -1,28 +1,28 @@
 ---
 type Props = {
-  direction?: "row" | "column";
+  direction?: "" | "";
   ratio?: string;
-  align?: "flex-start" | "center" | "flex-end";
-  justify?: "flex-start" | "center" | "flex-end";
+  align?: "" | "" | "";
+  justify?: "" | "" | "";
   gap?: string;
   padding?: string;
   extraClass?: string;
 };
 
 const {
-  direction = "row",
-  ratio = "1",
-  align = "center",
-  justify = "center",
-  gap = "8px",
-  padding = "0",
+  direction = "",
+  ratio = "",
+  align = "",
+  justify = "",
+  gap = "8",
+  padding = "",
   extraClass = "",
 } = Astro.props;
 ---
 
 <div
-  class={`flex size-full text-xl ${extraClass}`}
-  style={`flex: ${ratio}; flex-direction: ${direction}; align-items: ${align}; justify-content: ${justify}; gap:${gap}; padding: ${padding};`}
+  class={``}
+  style={``}
 >
   <slot />
 </div>

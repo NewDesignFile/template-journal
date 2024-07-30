@@ -1,11 +1,11 @@
 @import "@new-ui/colors";
+@import "@new-ui/effects";
+@import "@new-ui/grid";
 @import "@new-ui/spacings";
 @import "@new-ui/typography";
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
   content-visibility: auto;
   -webkit-font-smoothing: antialiased;
 }

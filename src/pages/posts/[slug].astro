@@ -23,22 +23,22 @@ const { post } = Astro.props;
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <div class="flex flex-col gap-8">
-    <div class="flex flex-col gap-6 items-center justify-center max-w-screen-sm mx-auto">
+  <div class="">
+    <div class="">
       <h1 id="header" class="">{post.data.title}</h1>
-      <div class="flex items-center justify-center gap-2">
+      <div class="">
         <DateTag date={post.data.date} />
         {post.data.tags?.map((tag) => <Tag tag={tag} />)}
       </div>
-      <p class="text-lg text-center text-zinc-700 max-w-[480px]">{post.data.description}</p>
+      <p class="">{post.data.description}</p>
     </div>
     {
       post.data.cover && (
-        <img src={`${post.data.cover}?w=1200&q=80`} alt="cover" class="w-full max-w-screen-md mx-auto rounded-lg" />
+        <img src={`${post.data.cover}?w=1200&q=80`} alt="cover" class="" />
       )
     }
   </div>
-  <div class="relative flex flex-col">
+  <div class="">
     <PostContent post={post} />
   </div>
 </Layout>
