@@ -1,24 +1,7 @@
-### Rough Notation
-
-You can use `<Notation />` component in your MDX content, such as:
-
-```mdx
-In Swift, the `Codable` protocol is a type alias for the <Notation type="box" color="blue">`Encodable` and `Decodable`</Notation> protocols:
 ```
+git clone https://github.com/New-Templates/blog.git
+cd blog
+pnpm i
+pnpm run dev
 
-And following is the type of this component:
-
-```tsx
-type Props = {
-  type?: "underline" | "circle" | "crossed-off" | "highlight" | "strike-through" | "bracket";
-  color?: string;
-  strokeWidth?: number;
-};
 ```
-
-### Integrations
-
-- @astrojs/mdx: https://docs.astro.build/en/guides/markdown-content/
-- @astrojs/rss: https://docs.astro.build/en/guides/rss/
-- @astrojs/sitemap: https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- rough-notation: https://roughnotation.com/
