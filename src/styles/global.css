@@ -1,14 +1,6 @@
+@import "@new-ui/reset";
 @import "@new-ui/colors";
 @import "@new-ui/effects";
 @import "@new-ui/grid";
 @import "@new-ui/spacings";
 @import "@new-ui/typography";
-
-html,
-body {
-  -webkit-font-smoothing: antialiased;
-}
-
-*:focus-visible {
-  outline: none;
-}

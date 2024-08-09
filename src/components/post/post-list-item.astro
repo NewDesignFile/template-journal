@@ -10,28 +10,27 @@ type Props = {
 const { post } = Astro.props;
 ---
 
-<div class="">
+<div>
   {
     post.slug && (
       <a href={`/posts/${post.slug}`} target="_self">
         <img
           src={post.data.cover ? `${post.data.cover}?w=800&q=80` : ""}
           alt="cover"
-          class="w-full aspect-video rounded-lg self-auto object-cover"
         />
       </a>
     )
   }
-  <div class="">
-    <div class="">
+  <div>
+    <div>
       <DateTag date={post.data.date} />
       {post.data.tags?.map((tag) => <Tag tag={tag} />)}
     </div>
     <a href={`/posts/${post.slug}`} target="_self">
-      <h1 class="">{post.data.title}</h1>
+      <h1>{post.data.title}</h1>
     </a>
     <a href={`/posts/${post.slug}`} target="_self">
-      <p class="">{post.data.description}</p>
+      <p>{post.data.description}</p>
     </a>
   </div>
 </div>

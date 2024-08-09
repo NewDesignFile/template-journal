@@ -28,5 +28,3 @@ export const MENUS = [
 ];
 
 export const FOOTER_CONTENT = "Make something wonderful today";
-
-export const GOOGLE_GTAG = "G-XXXXXXXXXX";

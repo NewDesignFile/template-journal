@@ -18,9 +18,9 @@ const { title, description } = Astro.props;
     <Meta title={title ? `${title} · ${SITE_TITLE}` : SITE_TITLE} description={description ?? SITE_DESCRIPTION} />
   </head>
   <body>
-    <div class="">
+    <div>
       <Header />
-      <div class="">
+      <div>
         <slot />
       </div>
       <Footer />

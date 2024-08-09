@@ -3,13 +3,11 @@ import { SITE_LOGO, SITE_TITLE } from "../config";
 import Menus from "./menus.astro";
 ---
 
-<header
-  class=""
->
-  <div class="">
-    <a href="/" class="">
-      <img src={SITE_LOGO} alt="logo" class="" width="24" height="24" />
-      <span class="">{SITE_TITLE}</span>
+<header>
+  <div>
+    <a href="/">
+      <img src={SITE_LOGO} alt="logo" width="24" height="24" />
+      <span>{SITE_TITLE}</span>
     </a>
     <Menus />
   </div>

@@ -2,11 +2,10 @@
 const props = Astro.props;
 ---
 
-<div {...props} class="">
+<div {...props}>
   <img
-    class=""
     src={props.src ? `${props.src}?w=1024&q=70` : ""}
     alt={props.alt ?? ""}
   />
-  <span class="">{props.alt}</span>
+  <span>{props.alt}</span>
 </div>

@@ -2,8 +2,6 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../components/layout.astro";
 import Tag from "../../components/tag.astro";
-
-// MDX Components
 import DateTag from "../../components/date-tag.astro";
 import PostContent from "../../components/post/post-content.astro";
 
@@ -20,25 +18,26 @@ type Props = {
 };
 
 const { post } = Astro.props;
+const { title, description, date, tags, cover } = post.data;
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <div class="">
-    <div class="">
-      <h1 id="header" class="">{post.data.title}</h1>
-      <div class="">
+  <div>
+    <div>
+      <h1 id="header">{post.data.title}</h1>
+      <div>
         <DateTag date={post.data.date} />
         {post.data.tags?.map((tag) => <Tag tag={tag} />)}
       </div>
-      <p class="">{post.data.description}</p>
+      <p>{post.data.description}</p>
     </div>
     {
       post.data.cover && (
-        <img src={`${post.data.cover}?w=1200&q=80`} alt="cover" class="" />
+        <img src={`${post.data.cover}?w=1200&q=80`} alt="cover" />
       )
     }
   </div>
-  <div class="">
+  <div>
     <PostContent post={post} />
   </div>
 </Layout>
@@ -51,6 +50,7 @@ const { post } = Astro.props;
     const type = node.dataset.notionType;
     const color = node.dataset.notionColor;
     const strokeWidth = node.dataset.notionStrokewidth;
+    
     return annotate(node, {
       type: (type as "underline") ?? "underline",
       color: color ?? "red",

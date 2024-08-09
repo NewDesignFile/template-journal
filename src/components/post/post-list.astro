@@ -9,8 +9,6 @@ type Props = {
 const { posts } = Astro.props;
 ---
 
-<div
-  class=""
->
+<div>
   {(posts ?? []).map((post) => <PostListItem post={post} />)}
 </div>

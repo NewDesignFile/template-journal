@@ -8,16 +8,14 @@ type Props = {
 const { slugs, activeSlug, generateLink } = Astro.props;
 ---
 
-<div
-  class=""
->
+<div>
   {
     slugs.map((slug, index) => (
       <>
         <a
           href={generateLink(slug)}
           target="_self"
-          class={`capitalize ${activeSlug === slug ? "" : ""}`}
+          class={`${activeSlug === slug ? "" : ""}`}
         >
           {slug}
         </a>
