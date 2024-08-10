@@ -30,7 +30,7 @@ const { post } = Astro.props;
       <h1>{post.data.title}</h1>
     </a>
     <a href={`/posts/${post.slug}`} target="_self">
-      <p>{post.data.description}</p>
+      <p class="summary">{post.data.description}</p>
     </a>
   </div>
 </div>

@@ -25,10 +25,10 @@ const { title, description, date, tags, cover } = post.data;
   <div>
     <div>
       <h1 id="header">{post.data.title}</h1>
-      <time>
+      <div>
         <DateTag date={post.data.date} />
         {post.data.tags?.map((tag) => <Tag tag={tag} />)}
-      </time>
+      </div>
       <aside>{post.data.description}</aside>
     </div>
     {
