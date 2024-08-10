@@ -106,14 +106,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: '12regular', var(--transitional);
-  font-size: var(--desktop-body-xl);
-  line-height: var(--lh-desktop-body-xl);
+  font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
+  font-feature-settings: "liga", "dlig", "hlig";
+  font-size: 20px;
+  line-height: 32px;
   color: var(--text-primary);
   text-rendering: optimizeLegibility;
   background: var(--background);
   word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
   position: relative;
+  font-kerning: normal;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 main {
   display: flex;
@@ -124,6 +130,7 @@ main {
   padding-left: 1.5em;
   padding-right: 1.5em;
   width: min(100%,34.5em);
+  max-width: 66ch;
 }
 header {display: flex;
   flex: 1;
@@ -155,14 +162,46 @@ p {
   position: relative;
   margin: 0;
   margin-top: 26px;
+  text-align: justify;
+  text-justify: inter-word;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hanging-punctuation: first last;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  orphans: 3;
+  widows: 3;
+}
+p::first-letter {
+  initial-letter: 3;
+  -webkit-initial-letter: 3;
+  color: var(--link); /* Deep purple color for emphasis */
+  font-weight: bold;
+  margin-right: 0.2em;
+}
+
+@supports (font-variant-alternates: stylistic(salt)) {
+  p {
+    font-variant-alternates: stylistic(salt);
+  }
+}
+h1, h2, h3 {
+  text-wrap: balance;
 }
 h1 {
-  font-size: 30px;
-  line-height: 36px;
+  font-size: var(--desktop-heading-01);
+  line-height: var(--lh-desktop-heading-01);
+  letter-spacing: -0.011em;
+  margin-bottom: -0.27em;
+  margin-top: 0px;
+  font-style: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
   font-weight: 500;
   color: var(--text-primary);
+  font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "case", "swsh", "hist", "lnum", "sups", "subs";
   margin-block-start: 30px;
-  margin-bottom: 12px;
   margin-inline-end: 0;
   margin-inline-start: 0;
   margin-left: 0;
