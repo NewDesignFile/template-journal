@@ -20,11 +20,6 @@ export const MENUS = [
     link: "/date",
     target: "_self",
   },
-  {
-    title: "Templates",
-    link: "https://new-ui.com/templates",
-    target: "_blank",
-  },
 ];
 
-export const FOOTER_CONTENT = "Make something wonderful today";
+export const FOOTER_CONTENT = "Realisation of Life";
