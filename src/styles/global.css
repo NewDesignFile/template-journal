@@ -129,8 +129,8 @@ main {
   margin-inline: auto;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  width: min(100%,34.5em);
-  max-width: 66ch;
+  width: min(100%,40em);
+  max-width: 100%;
 }
 header {display: flex;
   flex: 1;
@@ -138,7 +138,7 @@ header {display: flex;
   margin-inline: auto;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  width: min(100%,34.5em);}
+  width: min(100%,40em);}
 nav {display: flex;
   flex-direction: column;
   margin-bottom: 3.55em;
@@ -200,7 +200,6 @@ h1 {
   word-break: break-word;
   font-weight: 500;
   color: var(--text-primary);
-  font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "case", "swsh", "hist", "lnum", "sups", "subs";
   margin-block-start: 30px;
   margin-inline-end: 0;
   margin-inline-start: 0;
@@ -233,7 +232,7 @@ big {
   display: block;
 }
 a {
-  color: #0070e0;
+  color: var(--link);
   text-decoration: none;
 }
 h1 a {
