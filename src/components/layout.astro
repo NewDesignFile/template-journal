@@ -13,17 +13,17 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" data-new-ui-theme="dark">
+<html lang="en" data-new-ui-theme="light">
   <head>
     <Meta title={title ? `${title} · ${SITE_TITLE}` : SITE_TITLE} description={description ?? SITE_DESCRIPTION} />
   </head>
   <body>
-    <div>
-      <Header />
-      <div>
+    <Header />
+    <main>
+      <div class="flex-auto">
         <slot />
       </div>
       <Footer />
-    </div>
+    </main>
   </body>
 </html>
