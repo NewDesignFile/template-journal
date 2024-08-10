@@ -29,7 +29,7 @@ const { title, description, date, tags, cover } = post.data;
         <DateTag date={post.data.date} />
         {post.data.tags?.map((tag) => <Tag tag={tag} />)}
       </div>
-      <aside>{post.data.description}</aside>
+      <p class="summary">{post.data.description}</p>
     </div>
     {
       post.data.cover && (

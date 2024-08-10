@@ -151,6 +151,10 @@ nav {display: flex;
   margin-bottom: 3.55em;
   margin-top: 3.55em;}
 
+section {
+  margin-bottom: var(--spacing-12);
+}
+
 .caption,
 .small {
   font-size: 13px;
@@ -183,6 +187,7 @@ h1, h2, h3 {
   white-space: normal;
   -webkit-font-smoothing: antialiased;
   margin-bottom: -0.27em;
+  margin-top: 0em;
   letter-spacing: -0.011em;
 }
 h1 {
@@ -201,10 +206,9 @@ h3 {
 h2 + p, h3 + p {
   margin-top: var(--spacing-06);
 }
-
 p {
   position: relative;
-  margin-top: 26px;
+  margin-top: var(--spacing-06);
   font-size: 22px;
   line-height: 34px;
   text-justify: inter-word;
@@ -227,16 +231,27 @@ article p::first-letter {
 }
 p.summary {
   font-family: 'Libre Franklin';
-  font-size: 21px;
-  line-height: 27px;
-  color: var(--text-secondary);
+  font-size: 19px;
+  line-height: 25px;
+  color: var(--text-secondary-alt);
   letter-spacing: -0.011em;
+  margin-bottom: 8px;
 }
 
 @supports (font-variant-alternates: stylistic(salt)) {
   p {
     font-variant-alternates: stylistic(salt);
   }
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+figure img {
+  margin-bottom: var(--spacing-06);
 }
 
 blockquote {
@@ -277,58 +292,7 @@ hr {
   text-shadow: none;
   box-shadow: none;
 }
-code {
-  font-family: Consolas, monaco, monospace, monospace;
-  color: #1b2733;
-  background-color: #f7f9fa;
-  border-color: #e6e8eb;
-  border: 1px solid #e6e8eb;
-  margin: 0 0 0 -1px;
-  padding: 2px 0 1px;
-  font-weight: 400;
-  word-spacing: normal;
-  border-radius: 1px;
-  font-size: 0.93em;
-  line-height: 1.6;
-}
-h3 code {
-  font-weight: 700;
-}
-p code {
-  line-height: 1em;
-  padding: 2px;
-  margin-left: -2px;
-  display: inline-block;
-}
-pre code {
-  display: block;
-  padding: 12px 18px;
-  margin: -11px 0 -13px -18px;
-  background-color: rgba(0, 0, 0, 0.02);
-}
-table {
-  display: block;
-  width: auto;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
-  border-collapse: collapse;
-  border-spacing: 0;
-  box-sizing: border-box;
-  font-size: 15px;
-  line-height: 24px;
-}
-tr {
-  box-sizing: border-box;
-  border-top: 1px solid #100f0f;
-  padding: 0;
-}
-td,
-th {
-  box-sizing: border-box;
-  border: 1px solid #100f0f;
-  padding: 5px 12px 6px;
-}
+
 ul {
   margin: 0;
   margin-inline-start: 24px;
@@ -356,8 +320,17 @@ ul ul {
 li {
   margin: 0;
 }
-img {
-  vertical-align: middle;
-  max-width: 100%;
-  height: auto;
+
+.meta a{
+  font-family: 'Libre Franklin';
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--text-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border-muted);
+  padding: 2px 8px;
+  position: relative;
+  margin-right: 4px;
 }
