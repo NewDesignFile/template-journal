@@ -1,13 +1,111 @@
 @import "@new-ui/reset";
-@import "@new-ui/grid";
 @import "@new-ui/colors";
 @import "@new-ui/spacings";
 @import "@new-ui/typography";
 
+@font-face {
+  font-family: '08italic';
+  src: url('/fonts/08italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '08italic';
+  src: url('/fonts/08italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '08regular';
+  src: url('/fonts/08regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '08regular';
+  src: url('/fonts/08regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '12aiisc';
+  src: url('/fonts/12aiisc.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '12aiisc';
+  src: url('/fonts/12aiisc.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '12italic';
+  src: url('/fonts/12italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '12italic';
+  src: url('/fonts/12italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '12regular';
+  src: url('/fonts/12regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: '12regular';
+  src: url('/fonts/12regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SC08regular';
+  src: url('/fonts/SC08regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SC08regular';
+  src: url('/fonts/SC08regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SC12regular';
+  src: url('/fonts/SC12regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SC12regular';
+  src: url('/fonts/SC12regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--transitional);
+  font-family: '12regular', var(--transitional);
   font-size: var(--desktop-body-xl);
   line-height: var(--lh-desktop-body-xl);
   color: var(--text-primary);
