@@ -9,6 +9,5 @@ const { date } = Astro.props;
 <a
   href={`/date/${encodeURI(new Date(date).getFullYear().toString())}`}
   target="_self"
->
-  {date}
-</a>
+  class="meta-date"
+>{date}</a>

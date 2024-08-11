@@ -334,3 +334,7 @@ li {
   position: relative;
   margin-right: 4px;
 }
+
+a.meta-date{
+  font-family: var(--monospace-code)
+}
