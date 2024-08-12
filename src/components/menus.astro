@@ -2,12 +2,12 @@
 import { MENUS } from "../config";
 ---
 
-<div>
+<ul>
   {
     MENUS.map((item) => (
-      <a href={item.link}>
+      <li><a href={item.link}>
         {item.title}
-      </a>
+      </a></li>
     ))
   }
-</div>
+</ul>

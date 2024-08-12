@@ -14,12 +14,7 @@ export const MENUS = [
     title: "Tags",
     link: "/tags",
     target: "_self",
-  },
-  {
-    title: "Archive",
-    link: "/date",
-    target: "_self",
-  },
+  }
 ];
 
 export const FOOTER_CONTENT = "Realisation of Life";

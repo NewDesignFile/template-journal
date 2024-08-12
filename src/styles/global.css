@@ -133,26 +133,48 @@ main {
   flex-direction: column;
   margin-bottom: 3.075em;
   margin-inline: auto;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
   width: min(100%,40em);
   max-width: 100%;
 }
-header {display: flex;
-  flex: 1;
-  gap: 1em;
+header {
   margin-inline: auto;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  width: min(100%,40em);}
+  width: min(100%,40em);
+  padding-top: var(--spacing-13);
+  padding-bottom: var(--spacing-13);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-nav {display: flex;
-  flex-direction: column;
-  margin-bottom: 3.55em;
-  margin-top: 3.55em;}
+a.logo {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+a.logo img{
+  aspect-ratio: 1 / 1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
 
 section {
-  margin-bottom: var(--spacing-12);
+  margin-bottom: var(--spacing-13);
 }
 
 .caption,
@@ -245,13 +267,14 @@ p.summary {
 }
 
 img {
-  vertical-align: middle;
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 figure img {
   margin-bottom: var(--spacing-06);
+  object-fit: cover;
 }
 
 blockquote {
