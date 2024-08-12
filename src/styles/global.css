@@ -235,7 +235,7 @@ p.summary {
   line-height: 25px;
   color: var(--text-secondary-alt);
   letter-spacing: -0.011em;
-  margin-bottom: 8px;
+  margin-bottom: var(--spacing-06);
 }
 
 @supports (font-variant-alternates: stylistic(salt)) {
@@ -321,20 +321,41 @@ li {
   margin: 0;
 }
 
+.meta {display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;}
+
 .meta a{
-  font-family: 'Libre Franklin';
-  font-size: 14px;
-  line-height: 25px;
+  font-family: var(--monospace-code);
+  display: inline-block;
+  font-size: var(--desktop-body-sm);
+  line-height: 1;
   letter-spacing: -0.03em;
   text-align: center;
   color: var(--text-secondary);
-  border-radius: 8px;
+  border-radius: var(--spacing-04);
   border: 1px solid var(--border-muted);
-  padding: 2px 8px;
+  padding: var(--spacing-03) var(--spacing-04);
   position: relative;
-  margin-right: 4px;
+}
+
+.meta a:hover{
+  border: 1px solid var(--border);
 }
 
 a.meta-date{
-  font-family: var(--monospace-code)
+  font-family: 'Libre Franklin';
+  border-radius: 96px;
+  padding: var(--spacing-03) var(--spacing-05);
+}
+
+a.meta-date:hover{
+ background: var(--background-hover);
+ border: 1px solid var(--border-muted);
 }
