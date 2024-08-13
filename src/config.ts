@@ -22,4 +22,4 @@ export const MENUS = [
   }
 ];
 
-export const FOOTER_CONTENT = "©Method Black ⊛ ✻ Built With New UI & Astro ⊛ By @PlanetAbhi";
+export const FOOTER_CONTENT = "Love Everyone ✽ Serve Everyone";
