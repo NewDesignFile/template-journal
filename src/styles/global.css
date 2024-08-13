@@ -132,6 +132,7 @@
 }
 
 :root {
+  --accent: var(--support-error);
   --sans-serif-regular: 'sansRegular', var(--geometric-humanist);
   --sans-serif-bold: 'sansBold', var(--geometric-humanist);
   --serif-title: '12regular', var(--old-style);
@@ -207,13 +208,12 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: var(--text-secondary);
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #007bff;
+    color: var(--accent);
 }
 
 section {
@@ -291,7 +291,7 @@ p {
 article p::first-letter {
   initial-letter: 3;
   -webkit-initial-letter: 3;
-  color: var(--link);
+  color: var(--accent);
   font-weight: bold;
   margin-right: 0.2em;
 }
@@ -341,7 +341,7 @@ big {
   display: block;
 }
 a {
-  color: var(--link);
+  color: var(--accent);
   text-decoration: none;
 }
 h1 a {
@@ -370,8 +370,6 @@ hr {
 
 ul {
   margin: 0;
-  margin-inline-start: 24px;
-  margin-left: 24px;
   padding: 0;
 }
 ul {

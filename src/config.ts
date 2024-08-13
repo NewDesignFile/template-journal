@@ -1,5 +1,5 @@
 export const SITE_FAVICON = "/favicon.png";
-export const SITE_LOGO = "/avatar.png";
+export const SITE_LOGO = "/blog-logo.svg";
 export const SITE_TITLE = "Blog";
 export const SITE_DESCRIPTION =
   "Blog";
@@ -16,7 +16,7 @@ export const MENUS = [
     target: "_self",
   },
   {
-    title: "Get Template",
+    title: "Giet Template",
     link: "https://new-ui.com/templates/",
     target: "_blank",
   }
