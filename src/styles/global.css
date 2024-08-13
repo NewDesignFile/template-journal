@@ -137,11 +137,12 @@
   --sans-serif-bold: 'sansBold', var(--geometric-humanist);
   --serif-title: '12regular', var(--old-style);
   --serif-copy: '08regular', var(--old-style);
+  --serif-sc: 'SC08regular', var(--old-style);
 }
 
 ::selection {
-  color: var(--text-primary);
-  background-color: var(--yellow2);
+  color: var(--black);
+  background-color: var(--support-warning);
 }
 
 body {
@@ -288,12 +289,11 @@ p {
   widows: 3;
   font-optical-sizing: auto;
 }
-article p::first-letter {
-  initial-letter: 3;
-  -webkit-initial-letter: 3;
-  color: var(--accent);
-  font-weight: bold;
-  margin-right: 0.2em;
+article {
+  margin-bottom: var(--spacing-13);
+}
+article > p:first-of-type::first-line {
+  font-family: var(--serif-sc);
 }
 p.summary {
   font-family: 'Libre Franklin';
@@ -431,4 +431,23 @@ a.meta-date{
 a.meta-date:hover{
  background: var(--background-hover);
  border: 1px solid var(--border-muted);
+}
+
+footer{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 1px dotted var(--border-muted);
+  border-bottom: 1px dotted var(--border-muted)
+}
+
+footer p{
+  margin: 0;
+  font-family: var(--serif-sc);
+  display: inline-block;
+  font-size: var(--desktop-body);
+  line-height: 1;
+  text-align: center;
+  color: var(--text-secondary-alt);
+  position: relative;
 }
