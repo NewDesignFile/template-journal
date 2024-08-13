@@ -102,6 +102,41 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'sansBold';
+  src: url('/fonts/sansBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'sansBold';
+  src: url('/fonts/sansBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'sansRegular';
+  src: url('/fonts/sansRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'sansRegular';
+  src: url('/fonts/sansRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --sans-serif-regular: 'sansRegular', var(--geometric-humanist);
+  --sans-serif-bold: 'sansBold', var(--geometric-humanist);
+  --serif-title: '12regular', var(--old-style);
+  --serif-copy: '08regular', var(--old-style);
+}
 
 ::selection {
   color: var(--text-primary);
@@ -111,13 +146,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: '12regular', var(--transitional);
+  font-family: var(--serif-copy);
   font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
   font-feature-settings: "liga", "dlig", "hlig";
   font-size: 22px;
   line-height: 34px;
   color: var(--text-primary);
-  text-rendering: optimizeLegibility;
   background: var(--background);
   word-wrap: break-word;
   position: relative;
@@ -126,6 +160,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-synthesis-weight: none;
 }
 main {
   display: flex;
@@ -151,9 +186,17 @@ a.logo {
   display: flex;
   flex-direction: row;
   gap: .5rem;
+  font-family: var(--sans-serif-bold);
+  font-weight: bold;
+  align-items: center;
+  font-size: 22px;
+  line-height: 34px;
+  color: var(--text-primary);
 }
 a.logo img{
   aspect-ratio: 1 / 1;
+  width: 48px;
+  height: 48px;
 }
 
 nav ul {
@@ -192,6 +235,7 @@ section {
 }
 
 h1, h2, h3 {
+  font-family: var(--serif-title);
   text-wrap: balance;
   font-style: normal;
   overflow-wrap: break-word;
@@ -255,6 +299,14 @@ p.summary {
   font-family: 'Libre Franklin';
   font-size: 19px;
   line-height: 25px;
+  color: var(--text-secondary-alt);
+  letter-spacing: -0.011em;
+  margin-bottom: var(--spacing-06);
+}
+p.post-summary {
+  font-family: 'Libre Franklin';
+  font-size: 22px;
+  line-height: 34px;
   color: var(--text-secondary-alt);
   letter-spacing: -0.011em;
   margin-bottom: var(--spacing-06);

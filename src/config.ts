@@ -14,6 +14,11 @@ export const MENUS = [
     title: "Tags",
     link: "/tags",
     target: "_self",
+  },
+  {
+    title: "Get Template",
+    link: "https://new-ui.com/templates/",
+    target: "_blank",
   }
 ];
 
