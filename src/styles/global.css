@@ -2,6 +2,7 @@
 @import "@new-ui/colors";
 @import "@new-ui/spacings";
 @import "@new-ui/typography";
+@import "@new-ui/effects";
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
 
 @font-face {
@@ -290,7 +291,7 @@ p {
   font-optical-sizing: auto;
 }
 article {
-  margin-bottom: var(--spacing-13);
+  margin-bottom: var(--spacing-08);
 }
 article > p:first-of-type::first-line {
   font-family: var(--serif-sc);
@@ -325,8 +326,13 @@ img {
 }
 
 figure img {
-  margin-bottom: var(--spacing-06);
   object-fit: cover;
+  margin-bottom: var(--spacing-06);
+}
+
+figure.cover-image {
+  margin-top: var(--spacing-11);
+  margin-bottom: var(--spacing-11);
 }
 
 blockquote {
@@ -412,10 +418,11 @@ li {
   letter-spacing: -0.03em;
   text-align: center;
   color: var(--text-secondary);
-  border-radius: var(--spacing-04);
+  border-radius: var(--spacing-03);
   border: 1px solid var(--border-muted);
   padding: var(--spacing-03) var(--spacing-04);
   position: relative;
+  box-shadow: var(--canvas);
 }
 
 .meta a:hover{
@@ -435,10 +442,9 @@ a.meta-date:hover{
 
 footer{
   margin: 0;
-  padding: 0;
+  padding-top: var(--spacing-08);
   text-align: center;
   border-top: 1px dotted var(--border-muted);
-  border-bottom: 1px dotted var(--border-muted)
 }
 
 footer p{

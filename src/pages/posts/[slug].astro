@@ -25,15 +25,17 @@ const { title, description, date, tags, cover } = post.data;
   <div>
     <div>
       <h1 id="header">{post.data.title}</h1>
-      <div>
-        <DateTag date={post.data.date} />
-        {post.data.tags?.map((tag) => <Tag tag={tag} />)}
-      </div>
       <p class="post-summary">{post.data.description}</p>
+    </div>
+    <div class="meta">
+      <DateTag date={post.data.date} />
+      {post.data.tags?.map((tag) => <Tag tag={tag} />)}
     </div>
     {
       post.data.cover && (
+        <figure class="cover-image">
         <img src={`${post.data.cover}?w=1200&q=80`} alt="cover" />
+        </figure>
       )
     }
   </div>
