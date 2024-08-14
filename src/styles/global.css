@@ -245,7 +245,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--text-secondary);
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -292,7 +292,6 @@ h2 {
 h3 {
     font-size: 28px;
     line-height: 42px;
-    font-family: var(--classical-humanist);
 }
 h2 + p,
 h3 + p {
