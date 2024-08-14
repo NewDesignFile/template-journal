@@ -3,7 +3,6 @@
 @import "@new-ui/spacings";
 @import "@new-ui/typography";
 @import "@new-ui/effects";
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
 
 @font-face {
     font-family: "08italic";
@@ -131,6 +130,20 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "monoRegular";
+    src: url("/fonts/monoRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "monoRegular";
+    src: url("/fonts/monoRegular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     --accent: var(--support-error);
@@ -139,11 +152,15 @@
     --serif-title: "12regular", var(--old-style);
     --serif-copy: "08regular", var(--old-style);
     --serif-sc: "SC08regular", var(--old-style);
+    --serif-copy-italic: "08italic", var(--old-style);
+    --serif-breakout: "sansRegular", var(--geometric-humanist);
+    --serif-small: "12aiisc", var(--old-style);
+    --mono: "monoRegular", var(--monospace-code);
 }
 
 ::selection {
-    color: var(--background-high-contrast);
-    background-color: var(--text-inked);
+    color: var(--black);
+    background-color: var(--yellow2);
 }
 
 body {
@@ -202,6 +219,12 @@ a.logo img {
     aspect-ratio: 1 / 1;
     width: 48px;
     height: 48px;
+}
+
+em {
+    font-family: var(--serif-copy-italic);
+    font-weight: normal;
+    font-style: normal;
 }
 
 nav ul {
@@ -289,10 +312,10 @@ article > p:first-of-type::first-line {
 }
 article > p {
     text-indent: var(--spacing-13);
-    margin-top: var(--spacing-08);
+    margin-top: var(--spacing-06);
 }
 p.summary {
-    font-family: "Libre Franklin";
+    font-family: var(--sans-serif-regular);
     font-size: 19px;
     line-height: 25px;
     color: var(--text-secondary-alt);
@@ -301,7 +324,7 @@ p.summary {
     margin-bottom: var(--spacing-06);
 }
 p.post-summary {
-    font-family: "Libre Franklin";
+    font-family: var(--sans-serif-regular);
     font-size: 22px;
     line-height: 34px;
     color: var(--text-secondary-alt);
@@ -326,9 +349,9 @@ mark {
     background: transparent;
     background-image: linear-gradient(
       to right,
-      rgba(255, 225, 0, 0.1),
-      rgba(255, 225, 0, 0.5) 4%,
-      rgba(255, 225, 0, 0.3)
+      rgba(255, 204, 0, 0.1),
+      rgba(255, 204, 0, 0.3) 12%,
+      rgba(255, 204, 0, 0.1)
     );
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -358,10 +381,18 @@ figure.cover-image {
 }
 
 blockquote {
-    padding: 0 0 0 12px;
-    color: #100f0f;
-    opacity: 0.666;
+    padding-left: var(--spacing-09);
 }
+
+blockquote > p{
+    margin-top: var(--spacing-05);
+    font-family: var(--serif-breakout);
+    font-size: 28px;
+    line-height: 42px;
+    color: var(--text-secondary-alt);
+    letter-spacing: -0.011em;
+}
+
 big {
     color: #100f0f;
     font-size: 32px;
@@ -435,7 +466,7 @@ li {
 }
 
 .meta a {
-    font-family: var(--monospace-code);
+    font-family: var(--mono);
     display: inline-block;
     font-size: var(--desktop-body-sm);
     line-height: 1;
@@ -449,18 +480,20 @@ li {
 }
 
 .meta a:hover {
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-muted);
+    color: var(--accent);
 }
 
 a.meta-date {
-    font-family: "Libre Franklin";
+    font-family: var(--sans-serif-regular);
     border-radius: 96px;
     padding: var(--spacing-03) var(--spacing-05);
 }
 
 a.meta-date:hover {
     background: var(--background-hover);
-    border: 1px solid var(--border-muted);
+    border: 1px solid var(--background-hover);
+    color: var(--text-secondary);
 }
 
 footer {
@@ -473,13 +506,14 @@ footer {
 
 footer p {
     margin: 0;
-    font-family: var(--serif-sc);
+    font-family: var(--serif-small);
     display: inline-block;
-    font-size: var(--desktop-body);
+    font-size: inherit;
     line-height: 1;
     text-align: center;
     color: var(--text-secondary-alt);
     position: relative;
+    width: 100%;
 }
 
 .logo {
