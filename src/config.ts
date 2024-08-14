@@ -22,4 +22,4 @@ export const MENUS = [
   }
 ];
 
-export const FOOTER_CONTENT = "Love Everyone ✽ Serve Everyone";
+export const FOOTER_CONTENT = "Love Everyone";
