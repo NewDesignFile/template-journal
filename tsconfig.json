@@ -5,10 +5,11 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "verbatimModuleSyntax": true,
+    "baseUrl": ".",
     "paths": {
       "src": ["./src"]
     }
   },
-  "include": ["src"],
-  "exclude": ["dist"]
+  "include": ["src/**/*"],
+  "exclude": ["dist", "node_modules"]
 }
