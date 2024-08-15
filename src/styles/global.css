@@ -185,21 +185,17 @@ body {
 }
 #site-header {
     left: 0;
-    padding-top: var(--spacing-07);
-    position: absolute;
     top: 0;
     width: 100%;
     z-index: 10;
+    position: sticky;
 }
 nav {
-    align-items: center;
     display: flex;
-    flex-wrap: wrap;
+    padding-block: var(--spacing-06);
+    padding-inline: var(--spacing-06);
     justify-content: space-between;
-    flex-direction: row;
-    margin: 0 auto;
-    max-width: 840px;
-    width: 90%;
+    align-items: center;
 }
 main {
     display: flex;
@@ -227,7 +223,7 @@ a.logo img {
     width: 48px;
     height: 48px;
 }
-.front-page {
+.front-page, .post-page {
     margin-top: 5.5rem;
 }
 em {
@@ -253,7 +249,7 @@ nav a:hover {
 }
 
 section {
-    margin-bottom: var(--spacing-13);
+    margin-bottom: var(--spacing-12);
 }
 
 h1,
