@@ -2,7 +2,7 @@ MIT License
 
 Copyright (c) 2024 Method Black Studio @planetabhi
 Copyright (c) 2024 new-ui.com @NewDesignFile
-Copyright (c) 2024 infinity.ooo
+Copyright (c) 2024 infinity.ooo @infinity-ooo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
