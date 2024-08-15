@@ -183,6 +183,7 @@ body {
     font-synthesis-weight: none;
     vertical-align: baseline;
 }
+
 #site-header {
     left: 0;
     top: 0;
@@ -190,6 +191,7 @@ body {
     z-index: 10;
     position: sticky;
 }
+
 nav {
     display: flex;
     padding-block: var(--spacing-06);
@@ -197,6 +199,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 main {
     display: flex;
     flex: 1;
@@ -206,6 +209,7 @@ main {
     width: 100%;
     max-width: 840px;
 }
+
 a.logo {
     display: flex;
     flex-direction: row;
@@ -223,9 +227,11 @@ a.logo img {
     width: 48px;
     height: 48px;
 }
-.front-page, .post-page {
-    margin-top: 5.5rem;
+
+.front-page{
+    margin-top: var(--spacing-12);
 }
+
 em {
     font-family: var(--serif-copy-italic);
     font-weight: normal;
