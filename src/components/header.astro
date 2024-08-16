@@ -5,9 +5,10 @@ import Menus from "./menus.astro";
 
 <header id="site-header">
   <nav>  
-    <Menus />
     <a href="/" class="logo">
       <img src={SITE_LOGO} alt="journal" width="24" height="24" />
+      <span>{SITE_TITLE}</span>
     </a>
+    <Menus />
   </nav>
 </header>
