@@ -532,7 +532,20 @@ footer p {
     max-width: 100%;
     padding-inline: var(--spacing-07);
     }
+    .front-page {
+        margin-top: var(--spacing-10);
+    }
     #site-header {
         padding-block: var(--spacing-04);
+    }
+    a.logo img {
+        width: 2rem;
+        height: 2rem;
+    }
+    nav ul {
+        gap: 0.5rem;
+    }
+    section {
+        margin-bottom: var(--spacing-10);
     }
 }
