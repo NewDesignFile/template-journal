@@ -365,8 +365,6 @@ p.post-summary {
 }
 
 mark {
-    margin: 0 -0.4em;
-    padding: 0.1em 0.4em;
     border-radius: 0;
     background: transparent;
     background-image: linear-gradient(
