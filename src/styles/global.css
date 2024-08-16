@@ -409,7 +409,7 @@ blockquote > p{
     font-size: 1.75rem;
     line-height: 2.625rem;
     color: var(--text-secondary-alt);
-    letter-spacing: -0.011em;
+    letter-spacing: -0.008rem;
 }
 
 a {
