@@ -223,12 +223,13 @@ main {
 a.logo {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: var(--spacing-05);
     font-family: var(--serif-small);
     align-items: center;
     font-size: 1.375rem;
     line-height: 2.125rem;
     color: var(--text-inked);
+    letter-spacing: 0.025rem;
 }
 
 a.logo img {
@@ -525,5 +526,15 @@ footer p {
     }
 100%{
     transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 56em) {
+    main{
+    max-width: 100%;
+    padding-inline: var(--spacing-07);
+    }
+    #site-header {
+        padding-block: var(--spacing-04);
     }
 }
