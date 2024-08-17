@@ -146,7 +146,7 @@
 }
 
 :root {
-    --accent: var(--support-error);
+    --accent: var(--text-inked);
 
     /* fonts */
     --sans-serif-regular: "sansRegular", var(--geometric-humanist);
@@ -256,7 +256,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--text-secondary);
+    color: var(--text-secondary-alt);
     transition: all 0.3s ease;
 }
 
@@ -342,7 +342,7 @@ p.summary {
     line-height: 1.563rem;
     color: var(--text-secondary-alt);
     letter-spacing: -0.011em;
-    margin-top: var(--spacing-06);
+    margin-top: var(--spacing-05);
     margin-bottom: var(--spacing-06);
 }
 p.post-summary {
@@ -375,7 +375,7 @@ mark {
     );
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    color: var(--text-primary);
+    color: var(--text-inked);
 }
 
 img {
