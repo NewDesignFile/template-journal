@@ -469,7 +469,7 @@ li {
     line-height: 1;
     letter-spacing: -0.03em;
     text-align: center;
-    color: var(--text-secondary);
+    color: var(--text-secondary-alt);
     border-radius: var(--spacing-03);
     border: 1px solid var(--border-muted);
     padding: var(--spacing-03) var(--spacing-04);
