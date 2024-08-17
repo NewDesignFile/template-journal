@@ -146,7 +146,7 @@
 }
 
 :root {
-    --accent: var(--text-inked);
+    --accent: var(--support-error);
 
     /* fonts */
     --sans-serif-regular: "sansRegular", var(--geometric-humanist);
@@ -159,10 +159,6 @@
     --serif-breakout: "sansRegular", var(--geometric-humanist);
     --serif-small: "12aiisc", var(--old-style);
     --mono: "monoRegular", var(--monospace-code);
-
-    /* shadows */
-    --shadow-color:rgba(0,0,0,.04);
-    --sh-nav:0px 1px 1px -0.5px var(--shadow-color),0px 3px 3px -1.5px var(--shadow-color);
 }
 
 ::selection {
@@ -199,7 +195,6 @@ body {
     padding-block: var(--spacing-06);
     padding-inline: var(--spacing-06);
     background: var(--background);
-    box-shadow: var(--sh-nav);
 }
 
 nav {
@@ -256,8 +251,10 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--text-secondary-alt);
+    color: var(--text-primary);
     transition: all 0.3s ease;
+    font-family: var(--mono);
+    font-size: var(--desktop-body-sm);
 }
 
 nav a:hover {
@@ -375,7 +372,7 @@ mark {
     );
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    color: var(--text-inked);
+    color: var(--text-secondary);
 }
 
 img {
@@ -485,9 +482,9 @@ li {
 }
 
 a.meta-date {
-    font-family: var(--sans-serif-regular);
     border-radius: 6rem;
     padding: var(--spacing-03) var(--spacing-05);
+    border: 1px dashed var(--border-muted);
 }
 
 a.meta-date:hover {
