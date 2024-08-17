@@ -296,7 +296,7 @@ h1 {
 }
 h2 {
     font-size: 2.813rem;
-    line-height: 3.5rem;
+    line-height: 3.25rem;
     letter-spacing: -0.05rem;
 }
 h3 {
@@ -525,8 +525,8 @@ footer p {
 
 @media screen and (max-width: 56em) {
     main{
-    max-width: 100%;
-    padding-inline: var(--spacing-07);
+        max-width: 100%;
+        padding-inline: var(--spacing-07);
     }
     .front-page {
         margin-top: var(--spacing-10);
@@ -538,10 +538,27 @@ footer p {
         width: 2rem;
         height: 2rem;
     }
+    a.logo {
+        gap: var(--spacing-03);
+    }
     nav ul {
         gap: 0.5rem;
     }
     section {
         margin-bottom: var(--spacing-10);
+    }
+    .meta a {
+        font-size: var(--desktop-caption);
+        letter-spacing: -0.03em;
+        padding: var(--spacing-02) var(--spacing-03);
+    }
+    h1 {
+        line-height: 3.625rem;
+    }
+    h2 {
+        line-height: 2.813rem;
+    }
+    article > p {
+        text-indent: var(--spacing-10);
     }
 }
