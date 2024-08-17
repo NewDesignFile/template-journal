@@ -25,7 +25,7 @@ const { title, description, date, tags, cover } = post.data;
   <div>
     <div>
       <h1>{post.data.title}</h1>
-      <p class="post-summary"><mark>{post.data.description}</mark></p>
+      <p class="post-summary">{post.data.description}</p>
     </div>
     <div class="meta">
       <DateTag date={post.data.date} />

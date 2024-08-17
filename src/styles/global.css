@@ -372,7 +372,7 @@ mark {
     );
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    color: var(--text-secondary);
+    color: var(--text-primary);
 }
 
 img {
