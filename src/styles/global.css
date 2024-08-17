@@ -388,7 +388,7 @@ figure img {
     transition: all 0.3s ease;
 }
 figure img:hover {
-    transform: perspective(1200px) scale(1) rotate(0deg) rotateX(-6deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px);
+    transform: perspective(1200px) scale(1) rotate(0deg) rotateX(6deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px);
 }
 
 figure.cover-image {
