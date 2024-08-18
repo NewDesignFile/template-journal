@@ -8,18 +8,18 @@ type Props = {
 const { slugs, activeSlug, generateLink } = Astro.props;
 ---
 
-<div>
+<div class="meta tags-page">
   {
     slugs.map((slug, index) => (
       <>
         <a
           href={generateLink(slug)}
           target="_self"
-          class={`${activeSlug === slug ? "" : ""}`}
+          class={`${activeSlug === slug ? "tag-active" : ""}`}
         >
           {slug}
         </a>
-        <span>{index === slugs.length - 1 ? "" : " / "}</span>
+        <span>{index === slugs.length - 1 ? "" : ""}</span>
       </>
     ))
   }

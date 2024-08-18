@@ -479,7 +479,7 @@ li {
     font-family: var(--mono);
     display: inline-block;
     font-size: var(--desktop-body-sm);
-    line-height: 1;
+    line-height: var(--lh-desktop-body-sm);
     letter-spacing: -0.03em;
     text-align: center;
     color: var(--text-secondary-alt);
@@ -487,6 +487,7 @@ li {
     border: 1px solid var(--border-muted);
     padding: var(--spacing-03) var(--spacing-04);
     position: relative;
+    height: 100%;
 }
 
 .meta a:hover {
@@ -503,6 +504,24 @@ a.meta-date:hover {
     background: var(--background-hover);
     color: var(--text-secondary);
     border: 1px solid var(--background-hover);
+}
+
+.meta span {
+    font-family: var(--serif-title-italic);
+    display: inline-block;
+    font-size: var(--desktop-body-sm);
+    letter-spacing: -0.03em;
+    color: var(--text-secondary-alt);
+}
+
+.tags-page {
+    margin-bottom: var(--spacing-12);
+    display: flex;
+    gap: 0.25rem;
+}
+
+.tags-page .tag-active{
+    color: var(--accent);
 }
 
 footer {
@@ -566,6 +585,7 @@ footer p {
     }
     .meta a {
         font-size: var(--desktop-caption);
+        line-height: var(--lh-desktop-caption);
         letter-spacing: -0.03em;
         padding: var(--spacing-02) var(--spacing-03);
     }
