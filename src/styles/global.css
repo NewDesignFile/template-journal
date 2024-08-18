@@ -485,7 +485,7 @@ li {
     color: var(--text-secondary-alt);
     border-radius: var(--spacing-03);
     border: 1px solid var(--border-muted);
-    padding: var(--spacing-03) var(--spacing-04);
+    padding: var(--spacing-02) var(--spacing-04);
     position: relative;
     height: 100%;
 }
@@ -496,7 +496,7 @@ li {
 
 a.meta-date {
     border-radius: 6rem;
-    padding: var(--spacing-03) var(--spacing-05);
+    padding: var(--spacing-02) var(--spacing-05);
     border: 1px solid var(--border-muted);
 }
 
