@@ -221,10 +221,6 @@ a.logo {
     gap: var(--spacing-05);
     font-family: var(--serif-small);
     align-items: center;
-    font-size: 1.375rem;
-    line-height: 2.125rem;
-    color: var(--text-inked);
-    letter-spacing: 0.025rem;
 }
 
 a.logo img {
@@ -232,6 +228,23 @@ a.logo img {
     width: 3rem;
     height: 3rem;
 }
+
+a.logo span{
+    font-size: 1.375rem;
+    line-height: 2.125rem;
+    color: var(--text-inked);
+    letter-spacing: 0.025rem;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @supports (not (-ms-accelerator:true))
+      and (not (-moz-appearance:none)) {
+        a.logo span{
+            margin-top: -0.5rem;
+        }
+    }   }
 
 .front-page{
     margin-top: var(--spacing-12);
@@ -540,6 +553,10 @@ footer p {
     }
     a.logo {
         gap: var(--spacing-03);
+    }
+    a.logo span{
+        font-size: 1.375rem;
+        line-height: 1.375rem;
     }
     nav ul {
         gap: 0.5rem;

@@ -16,7 +16,7 @@ export const MENUS = [
     target: "_self",
   },
   {
-    title: "Get Template",
+    title: "Download",
     link: "https://new-ui.com/templates/journal",
     target: "_blank",
   }
