@@ -1,4 +1,4 @@
-# Journal 
-Journal, an Astro blog template.
+# Journal
+![Journal Preview](https://new-ui.com/assets/images/templates/preview-journal.png)
 
-[Getting started guide](https://new-ui.com/docs/templates/journal)
+An Astro blog template. [Getting started guide](https://new-ui.com/docs/templates/journal) (^０^)ノ
