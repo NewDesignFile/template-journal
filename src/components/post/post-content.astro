@@ -2,7 +2,6 @@
 import { type CollectionEntry } from "astro:content";
 
 // MDX Components
-import Box from "../box.astro";
 import A from "../mdx/a.astro";
 import Blockquote from "../mdx/blockquote.astro";
 import Br from "../mdx/br.astro";
@@ -19,7 +18,6 @@ import I from "../mdx/i.astro";
 import Img from "../mdx/img.astro";
 import Input from "../mdx/input.astro";
 import Li from "../mdx/li.astro";
-import Notation from "../mdx/notation.astro";
 import Ol from "../mdx/ol.astro";
 import P from "../mdx/p.astro";
 import Strong from "../mdx/strong.astro";
@@ -63,9 +61,5 @@ const { Content } = await post.render();
     del: Del,
     hr: Hr,
     br: Br,
-    // Custom Components
-    Box,
-    Notation,
-    N: Notation,
   }}
 />

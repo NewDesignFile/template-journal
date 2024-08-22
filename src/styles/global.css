@@ -6,149 +6,99 @@
 
 @font-face {
     font-family: "08italic";
-    src: url("/fonts/08italic.woff") format("woff");
+    src: url("/fonts/08italic.woff") format("woff"),
+         url("/fonts/08italic.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "08italic";
-    src: url("/fonts/08italic.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "08regular";
-    src: url("/fonts/08regular.woff") format("woff");
+    src: url("/fonts/08regular.woff") format("woff"),
+         url("/fonts/08regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "08regular";
-    src: url("/fonts/08regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "12aiisc";
-    src: url("/fonts/12aiisc.woff") format("woff");
+    src: url("/fonts/12aiisc.woff") format("woff"),
+         url("/fonts/12aiisc.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "12aiisc";
-    src: url("/fonts/12aiisc.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "12italic";
-    src: url("/fonts/12italic.woff") format("woff");
+    src: url("/fonts/12italic.woff") format("woff"),
+         url("/fonts/12italic.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "12italic";
-    src: url("/fonts/12italic.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "12regular";
-    src: url("/fonts/12regular.woff") format("woff");
+    src: url("/fonts/12regular.woff") format("woff"),
+         url("/fonts/12regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "12regular";
-    src: url("/fonts/12regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "SC08regular";
-    src: url("/fonts/SC08regular.woff") format("woff");
+    src: url("/fonts/SC08regular.woff") format("woff"),
+         url("/fonts/SC08regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "SC08regular";
-    src: url("/fonts/SC08regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "SC12regular";
-    src: url("/fonts/SC12regular.woff") format("woff");
+    src: url("/fonts/SC12regular.woff") format("woff"),
+         url("/fonts/SC12regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "SC12regular";
-    src: url("/fonts/SC12regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "sansBold";
-    src: url("/fonts/sansBold.woff") format("woff");
+    src: url("/fonts/sansBold.woff") format("woff"),
+         url("/fonts/sansBold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "sansBold";
-    src: url("/fonts/sansBold.woff2") format("woff2");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "sansRegular";
-    src: url("/fonts/sansRegular.woff") format("woff");
+    src: url("/fonts/sansRegular.woff") format("woff"),
+         url("/fonts/sansRegular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "sansRegular";
-    src: url("/fonts/sansRegular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: "monoRegular";
-    src: url("/fonts/monoRegular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "monoRegular";
-    src: url("/fonts/monoRegular.woff2") format("woff2");
+    src: url("/fonts/monoRegular.woff") format("woff"),
+         url("/fonts/monoRegular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 :root {
+    /* accent color */
     --accent: var(--support-error);
 
-    /* fonts */
+    /* custom typography */
     --sans-serif-regular: "sansRegular", var(--geometric-humanist);
     --sans-serif-bold: "sansBold", var(--geometric-humanist);
     --serif-title: "12regular", var(--old-style);
@@ -176,15 +126,13 @@ body {
     line-height: 2.125rem;
     color: var(--text-primary);
     background: var(--background);
-    word-wrap: break-word;
-    position: relative;
     font-kerning: normal;
     font-variant-numeric: oldstyle-nums proportional-nums;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-synthesis-weight: none;
-    vertical-align: baseline;
+    overflow-wrap: break-word
 }
 
 #site-header {
@@ -201,8 +149,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    -webkit-backdrop-filter:blur(18px) saturate(1.5);
-    backdrop-filter:blur(18px) saturate(1.5);
 }
 
 main {
@@ -238,6 +184,7 @@ a.logo span{
     align-items: center;
 }
 
+/* logo text fix, webkit */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @supports (not (-ms-accelerator:true))
       and (not (-moz-appearance:none)) {
@@ -283,23 +230,14 @@ h2,
 h3 {
     font-family: var(--serif-title);
     text-wrap: balance;
-    font-style: normal;
-    overflow-wrap: break-word;
-    word-break: break-word;
     font-weight: 500;
     color: var(--text-primary);
     margin-block-start: 1.875rem;
-    margin-inline-end: 0;
-    margin-inline-start: 0;
-    margin-left: 0;
-    margin-right: 0;
-    position: relative;
-    text-shadow: none;
     font-variant-ligatures: no-common-ligatures;
-    white-space: normal;
+    font-smooth: antialiased;
     -webkit-font-smoothing: antialiased;
     margin-bottom: -0.27em;
-    margin-top: 0em;
+    margin-top: 0;
     vertical-align: baseline;
 }
 h1 {
@@ -322,11 +260,9 @@ h3 + p {
     margin-top: var(--spacing-06);
 }
 p {
-    position: relative;
     font-size: 1.375rem;
     line-height: 2.125rem;
     text-justify: inter-word;
-    word-break: normal;
     overflow-wrap: break-word;
     hanging-punctuation: first last;
     hyphens: auto;
@@ -334,7 +270,6 @@ p {
     -ms-hyphens: auto;
     orphans: 3;
     widows: 3;
-    font-optical-sizing: auto;
 }
 article {
     margin-bottom: var(--spacing-08);
@@ -544,6 +479,7 @@ footer p {
     width: 100%;
 }
 
+/* logo animation */
 .logo:hover img{  animation: animName 7.2s linear infinite; }
   
 @keyframes animName {
@@ -555,6 +491,7 @@ footer p {
     }
 }
 
+/* media queries */
 @media screen and (max-width: 56em) {
     main{
         max-width: 100%;
