@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2024 Method Black Studio @planetabhi
+Copyright (c) 2024 Abhimanyu Rana @planetabhi
+Copyright (c) 2024 Method Black Studio
 Copyright (c) 2024 new-ui.com @NewDesignFile
 Copyright (c) 2024 infinity.ooo @infinity-ooo
 
