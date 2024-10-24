@@ -10,32 +10,32 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/New-Templates/journal.git"
+    "url": "git+https://github.com/NewDesignFile/template-journal.git"
   },
   "author": "@planetabhi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/New-Templates/journal/issues"
+    "url": "https://github.com/NewDesignFile/template-journal/issues"
   },
-  "homepage": "https://github.com/New-Templates/journal#readme",
+  "homepage": "https://github.com/NewDesignFile/template-journal#readme",
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
-    "@astrojs/mdx": "^3.1.4",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "^3.1.8",
     "@astrojs/react": "^3.6.2",
-    "@astrojs/rss": "^4.0.7",
-    "@astrojs/sitemap": "^3.1.6",
-    "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/parser": "^8.2.0",
-    "astro": "^4.14.4",
-    "eslint": "^9.9.0",
-    "eslint-plugin-astro": "^1.2.3",
+    "@astrojs/rss": "^4.0.9",
+    "@astrojs/sitemap": "^3.2.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/parser": "^8.11.0",
+    "astro": "^4.16.7",
+    "eslint": "^9.13.0",
+    "eslint-plugin-astro": "^1.3.0",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "remark-math": "^6.0.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.3"
   },
   "devDependencies": {
     "@new-ui/colors": "^1.3.0",
