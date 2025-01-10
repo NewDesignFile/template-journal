@@ -20,14 +20,14 @@
   "homepage": "https://new-ui.com/docs/templates/journal",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.0.3",
-    "@astrojs/react": "^4.1.2",
+    "@astrojs/mdx": "^4.0.5",
+    "@astrojs/react": "^4.1.3",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "@types/react": "^19.0.3",
+    "@types/react": "^19.0.4",
     "@types/react-dom": "^19.0.2",
-    "@typescript-eslint/parser": "^8.19.0",
-    "astro": "^5.1.2",
+    "@typescript-eslint/parser": "^8.19.1",
+    "astro": "^5.1.5",
     "eslint": "^9.17.0",
     "eslint-plugin-astro": "^1.3.1",
     "prettier": "^3.4.2",
@@ -35,13 +35,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remark-math": "^6.0.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   },
   "devDependencies": {
-    "@new-ui/colors": "^1.3.0",
-    "@new-ui/grid": "^0.0.7",
-    "@new-ui/reset": "^0.0.5",
-    "@new-ui/spacings": "^0.1.3",
-    "@new-ui/typography": "^0.1.6"
+    "@new-ui/foundations": "^0.1.0"
   }
 }
