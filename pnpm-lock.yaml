@@ -61,8 +61,8 @@ importers:
         version: 5.8.2
     devDependencies:
       '@new-ui/foundations':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.1
+        version: 0.2.1
 
 packages:
 
@@ -571,11 +571,11 @@ packages:
   '@new-ui/effects@0.1.4':
     resolution: {integrity: sha512-dgJPMKaqn1hbcYfT4SW/y8C39+PfF+1uVI/DJyim8+GZ5E8Yqisfs+MTdVByn0d1jHy6AZkCBRpiXeQfoXI6hA==}
 
-  '@new-ui/foundations@0.2.0':
-    resolution: {integrity: sha512-XvrkrcRVfF+CKkO1awveRN7RTAdWuosdWM8zxQMoQ+Cy3NUMLAIGZBvUb6yqe/Ml442T8SlAReIB6E+etAtXkQ==}
+  '@new-ui/foundations@0.2.1':
+    resolution: {integrity: sha512-gDGvTvmmq7SYYyTSnF7VnhxOIOGEL0zZZbnbYeWbXmtm4ZGQKuz/CN95Td64J4WcifNXIJvSSur49Ev199J+jQ==}
 
-  '@new-ui/reset@0.0.6':
-    resolution: {integrity: sha512-uM2gTBzbmCldp1amRJM3y7kUk1IzmMYegP4JLXyWqS6yArc+K8iwGmhnDeA81tyc6jy3tp7haCnMPziPxXnVaA==}
+  '@new-ui/reset@0.0.7':
+    resolution: {integrity: sha512-y2TdhXrQK0YhBlf1Bf/RqB8RHKdtthTiMIPyQOemk5/q+TmbHP4TQX2mpEQNnB9g0aEtq4NFixgbdSyCBY5Nvw==}
 
   '@new-ui/spacings@0.1.4':
     resolution: {integrity: sha512-/vKV+hWF++wiut1yfNUYgy3xiwwUn7+QWfahWBB1auAw1v3ol4dlvNQ7PHCNaCxLbIwgTMmWFsG965W0AuLseA==}
@@ -3191,15 +3191,15 @@ snapshots:
 
   '@new-ui/effects@0.1.4': {}
 
-  '@new-ui/foundations@0.2.0':
+  '@new-ui/foundations@0.2.1':
     dependencies:
       '@new-ui/colors': 1.3.1
       '@new-ui/effects': 0.1.4
-      '@new-ui/reset': 0.0.6
+      '@new-ui/reset': 0.0.7
       '@new-ui/spacings': 0.1.4
       '@new-ui/typography': 0.1.7
 
-  '@new-ui/reset@0.0.6': {}
+  '@new-ui/reset@0.0.7': {}
 
   '@new-ui/spacings@0.1.4': {}
 
