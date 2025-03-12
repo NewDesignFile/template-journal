@@ -38,6 +38,6 @@
     "typescript": "^5.8.2"
   },
   "devDependencies": {
-    "@new-ui/foundations": "^0.2.2"
+    "@new-ui/foundations": "^0.2.3"
   }
 }
